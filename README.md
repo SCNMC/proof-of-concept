@@ -1,6 +1,6 @@
 > _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
-# Proof of concept
+# Proof of concept pub
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
 Een omgeving waar je post its kan gebruiken voor methodes zoals brainstormsessies, cart sorting en andere vormen waarin je post its kan gebruiken. 
 ## Inhoudsopgave
