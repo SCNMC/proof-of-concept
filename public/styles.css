@@ -20,19 +20,19 @@ body{
 header{
     display: flex;
     flex-direction: row;
-    padding: 1em;
-    gap: 1em;
+    padding: 1.5em;
+    gap: 1.5em;
     color: var(--white);
     
 }
 
-header span::before{
+.slogan::before{
     content: "";
     display: inline-block;
-    width: 2px;
+    width: 1.5px;
     height: 25px;
     background-color: var(--white);
-    margin-right: .7em;
+    margin-right: 1em;
     position: relative;
     top: 3px;
 }
@@ -68,14 +68,15 @@ header span::before{
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 6em;
+      padding: 5.5em;
       background: #050542;
       border-width: 4px 4px 4px 3px;
       border-style: solid;
       border-color: #A675F5;
       border-radius: 29px;
       max-width: 100%;
-      margin: 4.5em;
+      margin: 3em;
+      margin-top: 1.5em;
       filter: drop-shadow(-7px 8px 0px #A675F5);
 
     }
@@ -88,7 +89,34 @@ header span::before{
      background-color: var(--purple);
      color: var(--blue);
      border-radius:6rem;
-    padding: 1rem;
-    
+     font-size: .6em;
+     padding: 1.3rem;
  }
 
+ .introduction{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     gap: 2em;
+     
+ }
+
+ .introduction h2{
+     color: var(--white)
+ }
+
+ .introduction h2::before{
+    content: "";
+    display: inline-block;
+    width: 1.5px;
+    height: 25px;
+    background-color: var(--white);
+    margin-right: 1em;
+    position: relative;
+    top: 3px;
+ }
+ .introduction p{
+     color: var(--purple);
+     width:30em;
+ }
