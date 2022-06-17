@@ -14,6 +14,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: var(--blue);
+    font-family:  'Open Sans', sans-serif;
 }
 
 header{
@@ -22,16 +23,72 @@ header{
     padding: 1em;
     gap: 1em;
     color: var(--white);
-    font-family:  'Open Sans', sans-serif;
+    
 }
 
-span::before{
+header span::before{
     content: "";
     display: inline-block;
-    width: 4px;
+    width: 2px;
     height: 25px;
     background-color: var(--white);
     margin-right: .7em;
     position: relative;
     top: 3px;
 }
+ header nav , ul{
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    padding: .2em;
+    gap: 2em;
+    list-style: none;
+  }
+
+  nav a{
+   text-decoration: none;
+   color: var(--purple);
+  }
+
+  .announcement{
+      background-color: var(--purple);
+      color: var(--blue);
+      padding: 0.5rem 1.6rem;
+      border-radius: .5em;
+  }
+
+  .aanmelden{
+      background-color: var(--blue);
+      padding: 0.5rem 1.6rem;
+      border: 2px solid  var(--purple);
+      border-radius: 1em;
+  }
+
+  .hero-section{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 6em;
+      background: #050542;
+      border-width: 4px 4px 4px 3px;
+      border-style: solid;
+      border-color: #A675F5;
+      border-radius: 29px;
+      max-width: 100%;
+      margin: 4.5em;
+      filter: drop-shadow(-7px 8px 0px #A675F5);
+
+    }
+
+  .hero-section  h1{
+      color: var(--purple);   
+      font-size: 5em; 
+  }
+ .hero-section span{
+     background-color: var(--purple);
+     color: var(--blue);
+     border-radius:6rem;
+    padding: 1rem;
+    
+ }
+
