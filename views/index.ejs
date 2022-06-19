@@ -8,37 +8,103 @@
     <section class="introduction">
         <h2>Introduction</h2>
         <p>FDND we love web sessies zijn talks waar gastspreker worden worden uitgenodigd om te praten over hun vakgebied. Super handig en interessant voor studenten en geintresseerden van buitenaf.</p>
-
-            <p>Afhankelijk van het onderwerp van de sprint nodigen wij gastsprekers uit om een onderwerp te behandelen dat relevant is tot betrekking met de sprint. Deze talks zijn niet voor studenten alleen maar voor iedereen die zich aangesproken voelt!</p>
+        <p>Afhankelijk van het onderwerp van de sprint nodigen wij gastsprekers uit om een onderwerp te behandelen dat relevant is tot betrekking met de sprint. Deze talks zijn niet voor studenten alleen maar voor iedereen die zich aangesproken voelt!</p>
     </section>
 
     <section class="instructions">
         <h2>Hoe werkt het?</h2>
-        <p>Ontdek intressante we love web sessies die op locatie worden gegeven. Aanmelden is makkelijk</p>
+        <p>Ontdek intressante we love web sessies die op locatie worden gegeven. Aanmelden is makkelijk!</p>
     
         <article class="look-event">
             <img src="/assets/magnify.png">
-            <p>Kijk op de evemts</p>
+            <p>Kijk op de events</p>
             <p>Neem een kijkje naar de next events en de upcoming events om jezelf te orienteren </p>
-
         </article>
 
         <article class="choose-event">
             <img src="/assets/ticket.png">
             <p>Kies een evenement</p>
             <p>Kies een evenement uit en klik op “go to event” om meer info hierover te krijgen</p>
-
         </article>
 
         <article class="signup-event">
             <img src="/assets/signup.png">
             <p>Meld je aan</p>
-            <p>Wil je graag bij het evenement bij zijn meld je dan sneel aan via de aanmeld button</p>
-
+            <p>Wil je graag bij het evenement bij zijn meld je dan snel aan via de aanmeld button</p>
         </article>
+         
+        <a class="full-agenda" href="">Full agenda</a>
+    </section>
 
+    <section class="upcoming-events">
+        <h2>Aankomende events</h2>
+
+      <ul class="leonie-watson">
+        <% projects.forEach(project => { %>
+        <li>
+          <!-- <img src="/assets/html.jpeg"> -->
+          <img src="<%= project.logo %>" />
+          <p><%= project.short_description %></p>
+          <p><%= project.short_description %></p>
+          <!-- <p>20-4-22 @ 16:30</p> -->
+          <!-- <p>What does User Experience mean when you listen to content instead of look at it?</p>
+          <p>Frontend design & development</p> -->
+
+          <% }) %>
+        </li>
+      </ul>
+
+      <!-- <ul class="leonie-watson">
+        <li>
+          <img src="/assets/html.jpeg">
+          <p>20-4-22 @ 16:30</p>
+          <p>What does User Experience mean when you listen to content instead of look at it?</p>
+          <p>Frontend design & development</p>
+        </li>
+      </ul>
+
+      <ul class="leonie-watson">
+        <li>
+          <img src="/assets/html.jpeg">
+          <p>20-4-22 @ 16:30</p>
+          <p>What does User Experience mean when you listen to content instead of look at it?</p>
+          <p>Frontend design & development</p>
+        </li>
+      </ul>
+
+      <ul class="leonie-watson">
+        <li>
+          <img src="/assets/html.jpeg">
+          <p>20-4-22 @ 16:30</p>
+          <p>What does User Experience mean when you listen to content instead of look at it?</p>
+          <p>Frontend design & development</p>
+        </li>
+      </ul>
+
+      <ul class="leonie-watson">
+        <li>
+          <img src="/assets/html.jpeg">
+          <p>20-4-22 @ 16:30</p>
+          <p>What does User Experience mean when you listen to content instead of look at it?</p>
+          <p>Frontend design & development</p>
+        </li>
+      </ul>
+
+      <ul class="leonie-watson">
+        <li>
+          <img src="/assets/html.jpeg">
+          <p>20-4-22 @ 16:30</p>
+          <p>What does User Experience mean when you listen to content instead of look at it?</p>
+          <p>Frontend design & development</p>
+        </li>
+      </ul> -->
 
     </section>
+
+
+
+
+
 
 </main>
 
