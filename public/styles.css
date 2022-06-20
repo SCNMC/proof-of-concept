@@ -23,6 +23,10 @@ header {
 	padding: 1.5em;
 	gap: 1.5em;
 	color: var(--white);
+    position: sticky;
+    top: 0px;
+    z-index: 99;
+    background-color: var(--blue);
 }
 
 .slogan::before {
@@ -43,6 +47,7 @@ ul {
 	padding: 0.2em;
 	gap: 2em;
 	list-style: none;
+    
 }
 
 nav a {
