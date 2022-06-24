@@ -14,17 +14,16 @@ app.set('views', './views')
 //     res.render("index.ejs");
 //   });
 
-app.get('/', (req, res) => {
-    fetchJson("https://chipr.api.fdnd.nl/v1/project").then(function (jsonData) {
-        res.render('index', {
-          title: 'Dit is de chippr api',
-          projects: jsonData.data,
-        })
-      })
-    })
+app.get("/", (req, res) => {
+    res.render("index");
+  });
 
     app.get("/detail", (req, res) => {
         res.render("detail");
+      });
+
+      app.get("/agenda", (req, res) => {
+        res.render("agenda");
       });
 
 
