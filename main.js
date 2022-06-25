@@ -1,4 +1,5 @@
 const express = require('express')
+const { json } = require('express/lib/response')
 const app = express()
 const port = 3000
 const fetch = (...args) => import('node-fetch').then(({ default: fetch }) => fetch(...args))
@@ -8,7 +9,7 @@ app.use(express.static('public'))
 
 // hook up template engine 
 app.set('view engine', 'ejs')
-app.set('views', './views')
+app.set('views', './views',)
 
 // app.get("/", (req, res) => {
 //     res.render("index.ejs");
@@ -25,6 +26,19 @@ app.get("/", (req, res) => {
       app.get("/agenda", (req, res) => {
         res.render("agenda");
       });
+
+    //   app.get("/pages/crud", (req, res) => {
+    //     res.render("./pages/crud");
+    //   });
+
+      app.get('/pages/crud', (req, res) => {
+        fetchJson("https://chipr.api.fdnd.nl/v1/project").then(function (jsonData) {
+        res.render('./pages/crud', {
+          title: 'Dit is de chippr api',
+          projects: jsonData.data,
+        })
+      })
+    })
 
 
 
