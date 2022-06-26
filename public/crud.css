@@ -34,13 +34,26 @@ header {
   }
   
   table {
-    width: 70%;
+    width: 90%;
     margin: auto;
     margin-top: 2em;
+    padding: 3em;
   }
+
   
   td,
   th {
     padding: 1.5em 0;
     text-align: center;
   }
+
+  tr :nth-child(3){
+      width:20em;
+  }
+  tr :nth-child(4){
+    width:20em;
+}
+
+td img{
+    width: 2em;
+}

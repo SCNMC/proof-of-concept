@@ -10,20 +10,22 @@
 <body>
     <header>
         <a href="#" class="logo"> PUB - CRUD FORM</a>
-        <a href="add.html">Add Member</a>
+        <a href="add.ejs">Add a session</a>
     </header>
     <table class="table">
-            <th>sessionid</th>
+            <th>id</th>
             <th>name</th>
             <th>link</th>
             <th>description</th>
+            <th>Edit</th>
 
             <% projects.forEach(project => { %>
             <tr>
+                <td><%= project.id %></td>
+                <td><%= project.name%></td>
+                <td><%= project.link %></td>
                 <td><%= project.short_description %></td>
-                <td><%= project.short_description %></td>
-                <td><%= project.short_description %></td>
-                <td><%= project.short_description %></td>
+                <td><a href="edit.ejs"><img src="/assets/edit-icon.svg"></a></td>
             </tr>
             <% }) %>
         
