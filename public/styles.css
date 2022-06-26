@@ -57,6 +57,9 @@ nav a {
 a{
     text-decoration: none;
 }
+a :hover{
+	text-decoration: none;
+}
 
 .announcement {
 	background-color: var(--purple);

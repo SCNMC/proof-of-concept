@@ -40,6 +40,10 @@ app.get("/", (req, res) => {
       })
     })
 
+    app.get("/pages/crud/edit", (req, res) => {
+      res.render("./pages/edit");
+    });
+
 
 
 app.listen(process.env.PORT || 3000, () => console.log(`App available on http://localhost:3000`))
