@@ -205,13 +205,16 @@ a :hover{
 .upcoming-events {
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
-	gap: 4em;
 	color: var(--white);
 	overflow: scroll;
+	gap: 4em;
 	overscroll-behavior-x: contain;
 	padding: 3em;
 }
 
+.upcoming-events ::-webkit-scrollbar{
+  display: none;
+}
 .upcoming-events h2::before {
 	content: "";
 	display: inline-block;
@@ -232,16 +235,19 @@ a :hover{
 }
 .upcoming-events ul {
 	grid-area: 2;
-    border-radius: 0.5em;  
+    border-radius: 4em;  
     color: var(--blue);
-    background-color: var(--purple);
     height: 23em;
 }
-.upcoming-events ul :nth-child(2){
-    font-weight: bolder;
+
+.upcoming-events ul li {
+	background-color: var(--purple);
+	border-radius: 0.5em;
 }
 
-.leonie-watson img {
+
+
+.next-events img {
 	max-width: 20em;
 	border-radius: 1em;
     padding: .5em;
@@ -315,4 +321,15 @@ a:hover {
 	border: 0;
 	padding: 0.625rem 0.9375rem;
 	margin-top: 0.3125rem;
+  }
+
+  /* media */
+
+  @media (max-width:50rem){
+	  nav,ul{
+		  display: flex;
+		  flex-direction: column;
+		 gap: 1.5em;
+		  
+	  }
   }

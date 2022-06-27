@@ -48,14 +48,12 @@
     font-size: 4em;
 }
 
-.full-agenda{
+.full-agenda > ul{
     color: var(--white);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
    grid-template-rows: 1fr ;
    padding: 2em;
-
-   
 }
 
 .full-event li{
@@ -67,6 +65,11 @@
    
     border-radius: .3em;
 }
+
+.full-event p{
+    margin-top: 1em;
+}
+
 
 
 

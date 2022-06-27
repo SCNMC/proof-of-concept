@@ -42,94 +42,27 @@
 
 <section class="full-agenda">
     <ul class="full-event">
+      <% sessions.forEach(session => { %>
      <li>
    
-       <h2>ICONS vs We<span>♥</span>Web</h2>
-       <p>What does User Experience mean when you listen to content instead of look at it?</p>
-       <p>22-03-2022 @ 16:30</p>
-
+       <h2><%= session.title %></h2>
+       <p><%= session.short_description %></p>
+       <p><%= session.datetime %></p>
      </li>
+     <% }) %>
     </ul>
 
-    <ul class="full-event">
-        <li>
-      
-          <h2>ICONS vs We<span>♥</span>Web</h2>
-          <p>What does User Experience mean when you listen to content instead of look at it?</p>
-          <p>22-03-2022 @ 16:30</p>
-   
-        </li>
-       </ul>
-
-       <ul class="full-event">
-        <li>
-      
-          <h2>ICONS vs We<span>♥</span>Web</h2>
-          <p>What does User Experience mean when you listen to content instead of look at it?</p>
-          <p>22-03-2022 @ 16:30</p>
-   
-        </li>
-       </ul>
-
-       <ul class="full-event">
-        <li>
-      
-          <h2>ICONS vs We<span>♥</span>Web</h2>
-          <p>What does User Experience mean when you listen to content instead of look at it?</p>
-          <p>22-03-2022 @ 16:30</p>
-   
-        </li>
-       </ul>
-       
-       <ul class="full-event">
-        <li>
-      
-          <h2>ICONS vs We<span>♥</span>Web</h2>
-          <p>What does User Experience mean when you listen to content instead of look at it?</p>
-          <p>22-03-2022 @ 16:30</p>
-   
-        </li>
-       </ul>
-       
-       <ul class="full-event">
-        <li>
-      
-          <h2>ICONS vs We<span>♥</span>Web</h2>
-          <p>What does User Experience mean when you listen to content instead of look at it?</p>
-          <p>22-03-2022 @ 16:30</p>
-   
-        </li>
-       </ul>
-
-       <ul class="full-event">
-        <li>
-      
-          <h2>ICONS vs We<span>♥</span>Web</h2>
-          <p>What does User Experience mean when you listen to content instead of look at it?</p>
-          <p>22-03-2022 @ 16:30</p>
-   
-        </li>
-       </ul>
-
-       <ul class="full-event">
-        <li>
-      
-          <h2>ICONS vs We<span>♥</span>Web</h2>
-          <p>What does User Experience mean when you listen to content instead of look at it?</p>
-          <p>22-03-2022 @ 16:30</p>
-   
-        </li>
-       </ul>
-
-       <ul class="full-event">
-        <li>
-      
-          <h2>ICONS vs We<span>♥</span>Web</h2>
-          <p>What does User Experience mean when you listen to content instead of look at it?</p>
-          <p>22-03-2022 @ 16:30</p>
-   
-        </li>
-       </ul>
+    <section class="full-agenda">
+      <ul class="full-event">
+        <% sessions.forEach(session => { %>
+       <li>
+     
+         <h2><%= session.title %></h2>
+         <p><%= session.short_description %></p>
+         <p><%= session.datetime %></p>
+       </li>
+       <% }) %>
+      </ul>
 </section>
 
 

@@ -34,109 +34,47 @@
             <p>Wil je graag bij het evenement bij zijn meld je dan snel aan via de aanmeld button</p>
         </article>
          
-        <a class="full-agenda" href="">Full agenda</a>
+        <a class="full-agenda" href="/agenda">Full agenda</a>
     </section>
 
-  <a href="/detail">
     <section class="upcoming-events">
         <h2>Next we <span>♥</span> web events</h2>
 
-
-      <ul class="leonie-watson">
+        
+      <ul class="next-events">
+        <% sessions.forEach(session => { %>
+          <a href="/detail/<%= session.sessionId %>">
         <li>
           <img src="/assets/html.jpeg">
-          <p>20-4-22 @ 16:30</p>
-          <p>What does User Experience mean when you listen to content instead of look at it?</p>
-          <p>Frontend design & development</p>
+          <p><%= session.title %></p>
+          <p><%= session.short_description %></p>
+          <p><%= session.link %></p>
         </li>
+        </a>
+        <% }) %>
       </ul>
-
-      <ul class="leonie-watson">
-        <li>
-          <img src="/assets/html.jpeg">
-          <p>20-4-22 @ 16:30</p>
-          <p>What does User Experience mean when you listen to content instead of look at it?</p>
-          <p>Frontend design & development</p>
-        </li>
-      </ul>
-
-      <ul class="leonie-watson">
-        <li>
-          <img src="/assets/html.jpeg">
-          <p>20-4-22 @ 16:30</p>
-          <p>What does User Experience mean when you listen to content instead of look at it?</p>
-          <p>Frontend design & development</p>
-        </li>
-      </ul>
-
-      <ul class="leonie-watson">
-        <li>
-          <img src="/assets/html.jpeg">
-          <p>20-4-22 @ 16:30</p>
-          <p>What does User Experience mean when you listen to content instead of look at it?</p>
-          <p>Frontend design & development</p>
-        </li>
-      </ul>
-
-      <ul class="leonie-watson">
-        <li>
-          <img src="/assets/html.jpeg">
-          <p>20-4-22 @ 16:30</p>
-          <p>What does User Experience mean when you listen to content instead of look at it?</p>
-          <p>Frontend design & development</p>
-        </li>
-      </ul>
-
-    </section>
+</section>
 
     <section class="upcoming-events">
         <h2>Aankomende we <span>♥</span> web events</h2>
 
+        <ul class="next-events">
+          <% sessions.forEach(session => { %>
+            <a href="/detail/<%= session.sessionId %>">
+          <li>
+            <img src="/assets/html.jpeg">
+            <p><%= session.title %></p>
+            <p><%= session.short_description %></p>
+            <p><%= session.link %></p>
+  
+            
+            
+          </li>
+          </a>
+          <% }) %>
+        </ul>
 
-      <ul class="leonie-watson">
-        <li>
-          <img src="/assets/html.jpeg">
-          <p>20-4-22 @ 16:30</p>
-          <p>What does User Experience mean when you listen to content instead of look at it?</p>
-          <p>Frontend design & development</p>
-        </li>
-      </ul>
-
-      <ul class="leonie-watson">
-        <li>
-          <img src="/assets/html.jpeg">
-          <p>20-4-22 @ 16:30</p>
-          <p>What does User Experience mean when you listen to content instead of look at it?</p>
-          <p>Frontend design & development</p>
-        </li>
-      </ul>
-
-      <ul class="leonie-watson">
-        <li>
-          <img src="/assets/html.jpeg">
-          <p>20-4-22 @ 16:30</p>
-          <p>What does User Experience mean when you listen to content instead of look at it?</p>
-          <p>Frontend design & development</p>
-        </li>
-      </ul>
-
-      <ul class="leonie-watson">
-        <li>
-          <img src="/assets/html.jpeg">
-          <p>20-4-22 @ 16:30</p>
-          <p>What does User Experience mean when you listen to content instead of look at it?</p>
-          <p>Frontend design & development</p>
-        </li>
-      </ul>
-
-      <ul class="leonie-watson">
-        <li>
-          <img src="/assets/html.jpeg">
-          <p>20-4-22 @ 16:30</p>
-          <p>What does User Experience mean when you listen to content instead of look at it?</p>
-          <p>Frontend design & development</p>
-        </li>
-      </ul>
+  
 
     </section>
   </a>

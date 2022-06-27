@@ -11,25 +11,34 @@ app.use(express.static('public'))
 app.set('view engine', 'ejs')
 app.set('views', './views',)
 
-// app.get("/", (req, res) => {
-//     res.render("index.ejs");
-//   });
 
-app.get("/", (req, res) => {
-    res.render("index");
-  });
 
-    app.get("/detail", (req, res) => {
-        res.render("detail");
-      });
+
+  
+  app.get("/", (req, res) => {
+    fetchJson("https://weloveweb.api.fdnd.nl/v1/session").then(function (jsonData) {
+    res.render('index', {
+      title: 'Dit is de we love web api',
+      sessions: jsonData.data
+    })
+  })
+})
+
+    app.get("/detail/:id", (req, res) => {
+      res.render('detail', {
+      })
+      })
+
 
       app.get("/agenda", (req, res) => {
-        res.render("agenda");
-      });
+        fetchJson("https://weloveweb.api.fdnd.nl/v1/session").then(function (jsonData) {
+        res.render('agenda', {
+          title: 'Dit is de we love web api',
+          sessions: jsonData.data
+        })
+      })
+    })
 
-    //   app.get("/pages/crud", (req, res) => {
-    //     res.render("./pages/crud");
-    //   });
 
       app.get('/pages/crud', (req, res) => {
         fetchJson("https://chipr.api.fdnd.nl/v1/project").then(function (jsonData) {
@@ -43,6 +52,11 @@ app.get("/", (req, res) => {
     app.get("/pages/crud/edit", (req, res) => {
       res.render("./pages/edit");
     });
+
+    app.get("/pages/crud/add", (req, res) => {
+      res.render("./pages/add");
+    });
+
 
 
 
