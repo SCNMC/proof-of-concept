@@ -28,9 +28,29 @@ Alle data qua events en info word gehaald uit de we love web api. Deze heb gefet
 
 
 ## 💡 Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
+<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe?
+ Misschien heb je een framwork of library gebruikt? -->
+### ✨ EJS
+
+Voorbeeld van vanuit de api weergeven voor elk project:
+
+<img width="479" alt="Schermafbeelding 2022-06-30 om 00 00 24" src="https://user-images.githubusercontent.com/90189750/176552783-968f1e7d-d8dd-4b12-9468-66378665f198.png">
+
+### 💎 Express
+
+Voorbeeld van het renderen van paginas en ervoor zorgen dat het crud formulier kan posten:
+<img width="477" alt="Schermafbeelding 2022-06-30 om 00 03 04" src="https://user-images.githubusercontent.com/90189750/176553175-549e65b5-59cf-4d9e-9333-337c984a7e6c.png">
 
 
+###    Node-fetch
+
+Standaard code die ik gebruik voor node-fetch
+
+<img width="680" alt="Schermafbeelding 2022-06-30 om 00 04 35" src="https://user-images.githubusercontent.com/90189750/176553430-0e7a46f2-d2cf-4041-9779-420af7e73cf6.png">
+
+### 🎨 CSS
+
+### 🔮 JS
 
 ## 💻 Installatie
 
