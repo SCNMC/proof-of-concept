@@ -29,11 +29,15 @@ header {
     background-color: var(--blue);
 }
 
+.header{
+	margin-left: 2em;
+}
+
 .slogan::before {
 	content: "";
 	display: inline-block;
 	width: 1.5px;
-	height: 25px;
+	height: 35px;
 	background-color: var(--white);
 	margin-right: 1em;
 	position: relative;
@@ -52,13 +56,13 @@ nav ,ul
 nav a {
 	text-decoration: none;
 	color: var(--purple);
+	margin-right: 2em;
 }
 
-a{
-    text-decoration: none;
-}
-a :hover{
+a, a:hover, a:focus, a:active {
 	text-decoration: none;
+	color: inherit;
+	list-style: none;
 }
 
 .announcement {
@@ -153,7 +157,7 @@ a :hover{
 	align-content: center;
 	color: var(--white);
 	text-align: center;
-	padding: 6em;
+	padding: 2em;
 	column-gap: 1em;
 }
 
