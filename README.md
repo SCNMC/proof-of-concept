@@ -2,8 +2,9 @@
 
 # Proof of concept pub
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
-Een omgeving waar je post its kan gebruiken voor methodes zoals brainstormsessies, cart sorting en andere vormen waarin je post its kan gebruiken. 
-## Inhoudsopgave
+Een overzichtspagina, detailpagina en agenda waar we love web sessies aangekondigd en weergeven worden voor geinterreseerde studenten en voor iedereen die zich aangesproken voelt.
+
+<img width="1000" alt="Schermafbeelding 2022-06-29 om 23 56 13" src="https://user-images.githubusercontent.com/90189750/176552199-5692f856-afbe-4da0-aa7c-7600a7192c1c.png">
 
   * [Beschrijving](#beschrijving)
   * [Kenmerken](#kenmerken)
@@ -13,6 +14,11 @@ Een omgeving waar je post its kan gebruiken voor methodes zoals brainstormsessie
   * [Licentie](#licentie)
 
 ## 📘 Beschrijving
+
+Dit is een project voor FDND met betrekking tot de we love web sessies die gehouden worden bij de Hva LWB. Deze opdracht bestaat uit een overzichtspagina, detailpagina en agenda. Voor beheerder van deze pagina heb ik ook een Crud formulier gemaakt (WIP). 
+Op de overzicht pagina die gemaakt is in de huisstijl van FDND kan je informatie krijgen over wat we love web is en hoe je kan aanmelden voor een event. Verder vindt je op deze pagina ook een gedeelde met next events en aankomende events. Wanneer je hierop klikt zal je naar de detailpagina geleid worden van dat specifieke event. Wil je alleen een volledige overicht zien van alle events dan kan dat door op de button "full agenda" te klikken. 
+
+Alle data qua events en info word gehaald uit de we love web api. Deze heb gefetcht door gebruik te maken van node-fetch. 
 
 
 
