@@ -212,8 +212,8 @@ a :hover{
 	padding: 3em;
 }
 
-.upcoming-events ::-webkit-scrollbar{
-  display: none;
+ ::-webkit-scrollbar{
+display: none;
 }
 .upcoming-events h2::before {
 	content: "";

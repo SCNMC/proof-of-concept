@@ -13,18 +13,18 @@
         <a href="/pages/crud/add">Add a session</a>
     </header>
     <table class="table">
-            <th>id</th>
-            <th>name</th>
-            <th>link</th>
-            <th>description</th>
+            <th>SessionId</th>
+            <th>Speaker</th>
+            <th>Description</th>
+            <th>Link</th>
             <th>Edit</th>
 
-            <% projects.forEach(project => { %>
+            <% sessions.forEach(session => { %>
             <tr>
-                <td><%= project.id %></td>
-                <td><%= project.name%></td>
-                <td><%= project.link %></td>
-                <td><%= project.short_description %></td>
+                <td><%= session.sessionId %></td>
+                <td><%= session.speaker%></td>
+                <td><%= session.short_description %></td>
+                <td><%= session.link %></td>
                 <td><a href="/pages/crud/edit"><img src="/assets/edit-icon.svg"></a></td>
             </tr>
             <% }) %>

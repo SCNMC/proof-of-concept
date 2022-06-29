@@ -41,10 +41,10 @@ app.set('views', './views',)
 
 
       app.get('/pages/crud', (req, res) => {
-        fetchJson("https://chipr.api.fdnd.nl/v1/project").then(function (jsonData) {
+        fetchJson("https://weloveweb.api.fdnd.nl/v1/session").then(function (jsonData) {
         res.render('./pages/crud', {
-          title: 'Dit is de chippr api',
-          projects: jsonData.data,
+          title: 'Dit is de we love web',
+          sessions: jsonData.data,
         })
       })
     })
