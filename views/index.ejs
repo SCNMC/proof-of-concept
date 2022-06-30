@@ -1,8 +1,18 @@
 <%- include('./partials/head') %>
 
 <section class="hero-section">
-    <h1>We <span>♥</span> web</h1>
-    <p>Next event: Leonie Watson ♥ the web ⇨</p>
+
+  <article>
+    <h1>Ontdek interessante <br> we love web events.</h1>
+    <p>We ♥ web is de plek voor <br>talks over frontend design & development,gegeven door ervaren gastsprekers </p>
+    <a href="">Meer info</a>
+  </article>
+
+  <div> 
+  <img src="/assets/weloveweb.jpeg">
+
+ </div>
+    
 </section>
 
 <main>
@@ -17,7 +27,7 @@
         <p>Ontdek intressante we love web sessies die op locatie worden gegeven. Aanmelden is makkelijk!</p>
     
         <article class="look-event">
-            <img src="/assets/magnify.png">
+           <a href="/agenda"><img src="/assets/magnify.png"></a>
             <p>Kijk op de events</p>
             <p>Neem een kijkje naar de next events en de upcoming events om jezelf te orienteren </p>
         </article>
@@ -40,10 +50,11 @@
     <section class="upcoming-events">
         <h2>Next we <span>♥</span> web events</h2>
 
+
         
       <ul class="next-events">
         <% sessions.forEach(session => { %>
-          <a href="/detail/<%= session.sessionId %>">
+          <a href="detail/<%= session.sessionId %>">
         <li>
           <img src="/assets/html.jpeg">
           <p><%= session.title %></p>

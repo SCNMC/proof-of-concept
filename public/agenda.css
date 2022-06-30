@@ -26,6 +26,10 @@
 	color: var(--white);
 }
 
+header p{
+	padding-left: 2.5em;
+}
+
 .homepage {
 	background-color: var(--purple);
 	color: var(--blue);

@@ -1,7 +1,9 @@
-<%- include('./partials/head') %>
+<%- include('./partials/detail-nav') %>
 
-<section class="hero-section">
-    <h1>Leonie Watson <span>♥</span> the web</h1>
+<section class="hero-detail">
+  <% sessions.forEach(session => { %> 
+    <h1><%= session.speaker %> <span>♥</span> the web</h1>
+    <% }) %>
 </section> 
 
 
@@ -10,20 +12,22 @@
 <section class="event-info">
 
 <section class="detail-introduction">
-    <h2> ICONS vs We<span>♥</span>Web</h2>
-    <p>We are incredibly happy that Léonie Watson is coming over to Amsterdam again to give another talk at an ICONS Meetup.</p>
-    <p>Five years ago Léonie gave a talk where she reflected on what User Experience means for someone who is blind. Back then we asked her the question what would make a user interface a pleaure to use. Simply said, back then, a user interface would be a pleasure to use if Leonie could use it to fulfill that task. Even if it would cost quite some troube to do it.</p>
-    <p>We asked her the same question again, and we wonder if things have improved in the last years. We certainly hope so.</p>
+  <% sessions.forEach(session => { %> 
+    <h2> <%= session.title %></h2>
+    <p><%= session.description%>.</p>
+  
+    <% }) %>
 </section>
 
 <section class="additional-info">
 
     <div class="info-container">
-      <h3>ⓘ  ICONS vs We<span>♥</span>Web</h3>
-      <p class="date-time"> <strong>Date & time:</strong> 22-03-2022 @ 16:30</p>
-      <p><strong>Location:</strong> Leeuwenburg (LWB) Weesperzijde 190 1097 DZ Amsterdam</p>
-      <p><strong>Link:</strong> www.fdnd.nl</p>
-      
+      <% sessions.forEach(session => { %> 
+      <h3><%= session.title %></h3>
+      <p class="date-time"> <strong>Date & time:</strong> <%= session.datetime%></p>
+      <p><strong>Location:</strong> <%= session.location%></p>
+      <p><strong>Link:</strong> <%= session.link %></p>
+      <% }) %>
     </div>
     
 
@@ -35,54 +39,65 @@
   </section>
 </section>
 
- <section class="upcoming-events">
-        <h2>Other events you may like</h2>
+        <section class="upcoming-events">
+          <h2>Other <span>♥</span> web events you may like</h2>
+  
+          <ul class="next-events">
+            <% sessions.forEach(session => { %>
+            <li>
+              <img src="/assets/html.jpeg">
+              <p><%= session.title %></p>
+              <p><%= session.short_description %></p>
+              <p><%= session.link %></p>
+            </li>
+            <% }) %>
+          </ul>
 
+          <ul class="next-events">
+            <% sessions.forEach(session => { %>
+            <li>
+              <img src="/assets/html.jpeg">
+              <p><%= session.title %></p>
+              <p><%= session.short_description %></p>
+              <p><%= session.link %></p>
+            </li>
+            <% }) %>
+          </ul>
 
-      <ul class="leonie-watson">
-        <li>
-          <img src="/assets/html.jpeg">
-          <p>What does User Experience mean when you listen to content instead of look at it?</p>
-          <p>20-4-22 @ 16:30</p>
-          <p>Frontend design & development</p>
-        </li>
-      </ul>
+          <ul class="next-events">
+            <% sessions.forEach(session => { %>
+            <li>
+              <img src="/assets/html.jpeg">
+              <p><%= session.title %></p>
+              <p><%= session.short_description %></p>
+              <p><%= session.link %></p>
+            </li>
+            <% }) %>
+          </ul>
 
-      <ul class="leonie-watson">
-        <li>
-          <img src="/assets/html.jpeg">
-          <p>What does User Experience mean when you listen to content instead of look at it?</p>
-          <p>20-4-22 @ 16:30</p>
-          <p>Frontend design & development</p>
-        </li>
-      </ul>
+          <ul class="next-events">
+            <% sessions.forEach(session => { %>
+            <li>
+              <img src="/assets/html.jpeg">
+              <p><%= session.title %></p>
+              <p><%= session.short_description %></p>
+              <p><%= session.link %></p>
+            </li>
+            <% }) %>
+          </ul>
 
-      <ul class="leonie-watson">
-        <li>
-          <img src="/assets/html.jpeg">
-          <p>What does User Experience mean when you listen to content instead of look at it?</p>
-          <p>20-4-22 @ 16:30</p>
-          <p>Frontend design & development</p>
-        </li>
-      </ul>
+          <ul class="next-events">
+            <% sessions.forEach(session => { %>
+            <li>
+              <img src="/assets/html.jpeg">
+              <p><%= session.title %></p>
+              <p><%= session.short_description %></p>
+              <p><%= session.link %></p>
+            </li>
+            <% }) %>
+          </ul>
 
-      <ul class="leonie-watson">
-        <li>
-          <img src="/assets/html.jpeg">
-          <p>What does User Experience mean when you listen to content instead of look at it?</p>
-          <p>20-4-22 @ 16:30</p>
-          <p>Frontend design & development</p>
-        </li>
-      </ul>
-
-      <ul class="leonie-watson">
-        <li>
-          <img src="/assets/html.jpeg">
-          <p>What does User Experience mean when you listen to content instead of look at it?</p>
-          <p>20-4-22 @ 16:30</p>
-          <p>Frontend design & development</p>
-        </li>
-      </ul>
+          
 
     </section>
 

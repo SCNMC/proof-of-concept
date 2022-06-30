@@ -5,6 +5,7 @@ const port = 3000;
 const fetch = (...args) => import('node-fetch').then(({ default: fetch }) => fetch(...args))
 var bodyParser = require("body-parser");
 const urlencodedParser = bodyParser.urlencoded({extended:false})
+const url = "https://weloveweb.api.fdnd.nl/v1/session"
 
 app.use(express.urlencoded({extended: true}))  
 
@@ -20,7 +21,7 @@ app.set("views", "./views");
 
 
 app.get("/", (req, res) => {
-	fetchJson("https://weloveweb.api.fdnd.nl/v1/session").then(function (
+	fetchJson(url).then(function (
 		jsonData
 	) {
 		res.render("index", {
@@ -30,12 +31,21 @@ app.get("/", (req, res) => {
 	});
 });
 
+
+
 app.get("/detail/:id", (req, res) => {
-	res.render("detail", {});
-});
+
+  fetchJson(url + `/${req.params.id}`).then(function (jsonData) {
+    
+  res.render('detail', {
+    sessions: jsonData.data
+  })
+  })
+})
+
 
 app.get("/agenda", (req, res) => {
-	fetchJson("https://weloveweb.api.fdnd.nl/v1/session").then(function (
+	fetchJson(url).then(function (
 		jsonData
 	) {
 		res.render("agenda", {
@@ -46,7 +56,7 @@ app.get("/agenda", (req, res) => {
 });
 
 app.get("/pages/crud", (req, res) => {
-	fetchJson("https://weloveweb.api.fdnd.nl/v1/session").then(function (
+	fetchJson(url).then(function (
 		jsonData
 	) {
 		res.render("./pages/crud", {
@@ -66,7 +76,7 @@ app.get("/pages/crud/add", (req, res) => {
 
 // Crud
 
-app.post("/pages/crud/add", urlencodedParser, async (req, res) => {
+app.post("/pages/crud/add", urlencodedParser, (req, res) => {
 	const postData = {
 		method: "POST",
 
@@ -78,10 +88,17 @@ app.post("/pages/crud/add", urlencodedParser, async (req, res) => {
 	};
   console.log(1, postData);
 
-	await fetchJson("https://weloveweb.api.fdnd.nl/v1/session", postData).then(function (data) {
+	 fetchJson(url, postData).then(function (data) {
 		res.send("succes");
 	});
 });
+
+
+
+
+app.listen(process.env.PORT || 3000, () =>
+	console.log(`App available on http://localhost:3000`)
+);
 
 /**
  * Wraps the fetch api and returns the response body parsed through json
@@ -93,13 +110,4 @@ app.post("/pages/crud/add", urlencodedParser, async (req, res) => {
 		.then((response) => response.json())
 		.catch((error) => error);
 }
-
-
-
-
-
-
-app.listen(process.env.PORT || 3000, () =>
-	console.log(`App available on http://localhost:3000`)
-);
 
