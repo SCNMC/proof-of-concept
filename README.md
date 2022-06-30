@@ -6,6 +6,10 @@ Een overzichtspagina, detailpagina en agenda waar we love web sessies aangekondi
 
 <img width="1000" alt="Schermafbeelding 2022-06-29 om 23 56 13" src="https://user-images.githubusercontent.com/90189750/176552199-5692f856-afbe-4da0-aa7c-7600a7192c1c.png">
 
+2e versie overzichtspagina 
+
+<img width="1000" alt="Schermafbeelding 2022-06-30 om 20 38 58" src="https://user-images.githubusercontent.com/90189750/176753323-fcb63920-6dc7-423a-bf4c-47dd51a62579.png">
+
   * [Beschrijving](#beschrijving)
   * [Kenmerken](#kenmerken)
   * [Installatie](#installatie)
